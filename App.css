@@ -1,0 +1,101 @@
+/* frontend/src/App.css */
+
+.container {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+}
+
+/* Habit card */
+.habit-card {
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 10px;
+  padding: 18px;
+  margin-bottom: 16px;
+  position: relative;
+}
+
+/* Streak text */
+.streak {
+  font-size: 1.1rem;
+  margin: 8px 0 12px;
+}
+
+.streak.active {
+  color: #e85d04;
+  font-weight: 600;
+}
+
+/* New habit row */
+.new-habit-row {
+  display: flex;
+  gap: 8px;
+}
+
+.new-habit-row input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.new-habit-row button {
+  padding: 10px 14px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Check-in button */
+button {
+  cursor: pointer;
+}
+
+.checked-btn {
+  background: #2e7d32 !important;
+  color: white;
+  opacity: 0.7;
+}
+
+/* Calendar */
+.calendar {
+  display: flex;
+  gap: 6px;
+  margin-top: 12px;
+}
+
+.day-box {
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
+  background: #eee;
+  color: #666;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+}
+
+.day-box.done {
+  background: #22c55e;
+  color: white;
+}
+
+/* Delete button */
+.delete-btn {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  border: none;
+  background: transparent;
+  color: #888;
+  font-size: 12px;
+}
+
+.delete-btn:hover {
+  color: red;
+}
